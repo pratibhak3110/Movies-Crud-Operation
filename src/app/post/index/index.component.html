@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <button class="btn btn-success" (click)="addMovie()" >Add New Movie</button>
+    <br><br>
+    <div class="row"> 
+        <div class="col-md-3 "  *ngFor="let item of post">
+            <div class="card" style="width: 18rem;">
+                <img src="{{item.img}}" class="card-img-top" style="height: 18rem;" alt="...">
+                <div class="card-body">
+                   
+                  <h5 class="card-title">{{item.id}}. {{item.name}}</h5>
+                  <p class="card-text">{{item.date}}</p>
+                  <p class="card-text">{{item.seen}}</p>
+                 
+                  <button class="btn btn-info" (click)="viewMovie(item.id)">View</button>&nbsp;
+                  <button class="btn btn-success" (click)="editMovie(item.id)" >Edit</button>&nbsp;
+                  <button class="btn btn-danger" (click)="deletePost(item.id)">Delete</button>&nbsp;
+              
+                </div>
+              </div>
+              <br>
+        </div>
+    </div>
+  
+</div> 
+
+<!-- [routerLink]="['/post/', 'edit', item.id ]" -->

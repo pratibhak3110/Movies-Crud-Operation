@@ -1,0 +1,68 @@
+<div class= "container mt-3">
+    <h1>Add New Movie</h1>
+
+    <a href="#" routerLink= "/post/index" class= "btn btn-primary"> Back </a>
+
+    <form [formGroup]= "form" (ngSubmit)="submit()">
+        
+        <div class="form-group">
+            <label>Name: </label>
+            <input 
+                formControlName="name"
+                id="name"
+                type="text"
+                [(ngModel)]="post.name"
+                class="form-control">
+
+            <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
+                <div *ngIf="f.name.errors?.required">Name is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Date: </label>
+            <input 
+                formControlName="date"
+                id="date"
+                type="date"
+                [(ngModel)]="post.date"
+                class="form-control">
+
+            <div *ngIf="f.date.touched && f.date.invalid" class="alert alert-danger">
+                <div *ngIf="f.date.errors?.required">Date is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Watched: </label>
+            <input 
+                formControlName="seen"
+                id="seen"
+                type="text"
+                [(ngModel)]="post.seen"
+                class="form-control">
+
+            <div *ngIf="f.seen.touched && f.seen.invalid" class="alert alert-danger">
+                <div *ngIf="f.seen.errors?.required">Seen is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Image Url: </label>
+            <input 
+                formControlName="img"
+                id="img"
+                type="text"
+                [(ngModel)]="post.img"
+                class="form-control">
+
+            <div *ngIf="f.img.touched && f.img.invalid" class="alert alert-danger">
+                <div *ngIf="f.img.errors?.required">Image is required.</div>
+            </div>
+        </div>
+        <br>
+        
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+        
+    </form>
+</div>

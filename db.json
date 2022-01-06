@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "name": "URI",
+      "date": "2018-05-08",
+      "seen": "true",
+      "img": "https://i0.wp.com/boxofficeworldwide.com/wp-content/uploads/2021/01/1170x658withlog_1586171401.jpg?fit=599%2C337&ssl=1",
+      "id": 2
+    },
+    {
+      "name": "Shershaah",
+      "date": "2017-09-06",
+      "seen": "true",
+      "img": "https://m.media-amazon.com/images/M/MV5BMjk1NzcwMDUtNDU4ZC00MzlhLTkzZjAtM2MxMTRjZGE0ODdhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+      "id": 3
+    },
+    {
+      "name": "Sanju",
+      "date": "2017-09-09",
+      "seen": "false",
+      "img": "https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/7082/97082-h",
+      "id": 4
+    },
+    {
+      "name": "The Jungle Book",
+      "date": "2000-01-03",
+      "seen": "true",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/p_thejunglebook2016_19751_6b8cfcec.jpeg",
+      "id": 5
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
